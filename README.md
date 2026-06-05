@@ -2,10 +2,19 @@
 
 Vercelにそのままアップロードできる静的LPです。
 
+## 構成
+
+- `index.html`：LP本体
+- `style.css`：デザインとレスポンシブ設定
+- `script.js`：SNSリンクの一元管理
+- `assets/images/`：PC用画像
+- `assets/images/mobile/`：スマートフォン用画像
+- `robots.txt` / `vercel.json`：確認公開用のnoindex設定
+
 ## 差し替え箇所
 
 - SNSリンクは `script.js` の `LINKS` にまとめています。
-- 画像は `assets/images/sectionXX-*.png` を同名で置き換えると反映されます。
+- 画像は `assets/images/sectionXX-*.webp` と `assets/images/mobile/sectionXX-*.webp` を同名で置き換えると反映されます。
 
 ## 公開設定
 
